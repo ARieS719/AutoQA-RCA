@@ -22,7 +22,7 @@ jobs:
           pip install -r requirements.txt
       - name: Generate fault-injection demo cases
         run: python -m mock_data.fault_injection
-      - name: Offline smoke: diagnose one case per track
+      - name: "Offline smoke: diagnose one case per track"
         run: |
           python -m rca_engine.cli diagnose --case data_output/demo_cases/case_1_ui_crash --offline
           python -m rca_engine.cli diagnose --case data_output/demo_cases/case_2_can_congestion --offline
