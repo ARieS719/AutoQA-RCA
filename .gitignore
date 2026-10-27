@@ -1,0 +1,29 @@
+# 虚拟环境
+venv/
+env/
+
+# 环境变量（绝对不能上传真实密钥）
+.env
+
+# Python 缓存
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 运行时产物
+data_output/
+reports/
+*.png
+*.jpg
+*.mp4
+*.log
+
+# pip 构建残留临时目录
+pip-install-*/
+pip-wheel-*/
+
+# IDE
+.idea/
+.vscode/
+pytest-of-*/
+data-gym-cache/
